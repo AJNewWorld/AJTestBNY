@@ -11,7 +11,7 @@ namespace AspNetCoreWebApplication.Controllers
     {
         public IActionResult Index()
         {
-            ViewData["Message"] = "You just put CET on the cloud! YAAAY !!";
+            ViewData["Message"] = "Team just put CET on the cloud! YAAAY !!";
             return View();
         }
 

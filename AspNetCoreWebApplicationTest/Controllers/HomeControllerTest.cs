@@ -12,11 +12,11 @@ namespace AspNetCoreWebApplicationTest.Controllers
             HomeController controller = new HomeController();
             ViewResult result = (ViewResult) controller.Index();
             Assert.Single(result.ViewData);
-            Assert.Equal("You just put CET on the cloud! YAAAY !!", result.ViewData["Message"]);
+            Assert.Equal("Team just put CET on the cloud! YAAAY !!", result.ViewData["Message"]);
         }
 
         [Fact]
-        public void ErrorTest()
+        public void ErrorTest()     
         {
             HomeController controller = new HomeController();
             ViewResult result = (ViewResult)controller.Error();
