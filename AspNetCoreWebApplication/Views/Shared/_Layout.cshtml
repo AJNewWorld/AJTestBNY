@@ -8,7 +8,13 @@
     <link href="~/css/styles.css" rel="stylesheet">
     <link href="~/css/gradients.css" rel="stylesheet">
 </head>
+<script>
 
+    function ProcessFile() {
+        window.alert("Thanks for uploading the file. We are processing.. Appreciate your patience...")
+        window.location.replace("http://localhost/index.html");
+    }
+</script>
 <body class="">
     <div class="wrapper">
         <div class="graphics">
@@ -61,6 +67,7 @@
         </header>
 
         <div class="message">
+            <input type="file" /><button onclick="ProcessFile()">Upload claims file.</button>
             @RenderBody()
         </div>
     </div>
