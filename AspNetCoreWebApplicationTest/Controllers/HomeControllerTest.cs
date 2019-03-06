@@ -12,7 +12,7 @@ namespace AspNetCoreWebApplicationTest.Controllers
             HomeController controller = new HomeController();
             ViewResult result = (ViewResult) controller.Index();
             Assert.Single(result.ViewData);
-            Assert.Equal("Sample just put Loft App on the cloud! YAAAY !!", result.ViewData["Message"]);
+            Assert.Equal("Unique just put Loft App on the cloud! YAAAY !!", result.ViewData["Message"]);
         }
 
         [Fact]
